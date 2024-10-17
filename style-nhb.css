@@ -1,73 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Segma;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+    background-color: #1C1331;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor de la aplicación (mensaje inicial y dropdown) */
+#app-container {
     text-align: center;
+    color: white;
 }
 
 h1 {
+    font-size: 24px;
     margin-bottom: 20px;
+    color: white;
 }
 
+/* Lista desplegable */
 label {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    color: white;
 }
 
 select {
     padding: 10px;
-    margin: 10px 0;
     font-size: 16px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #00d9fc;
+    color: #100423;
+    font-family: Segma;
 }
 
+/* Contenedor para las tarjetas */
+.flyer-container {
+    background-color: #1C1331;
+    color: #100423;
+    width: 320px;
+    text-align: left;
+    border-radius: 10px; /* Bordes redondeados solo en el contenedor */
+    overflow: hidden;
+    margin-top: 20px; /* Espaciado para que no esté pegado al dropdown */
+}
+
+/* Estilos comunes para las secciones */
 .section {
-    background-color: #fff;
-    border: 1px solid #ddd;
     padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    position: relative;
 }
 
+/* Estilo específico para las secciones de moto y bici */
+.section-moto-auto,
+.section-bici {
+    background-color: #00d9fc;
+    margin-bottom: 5px; /* Separación visual entre las tarjetas */
+}
+
+/* Bordes redondeados */
+.section-moto-auto {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.section-bici {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Texto del título */
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #100423;
+}
+
+.highlight {
+    color: #100423;
+    font-weight: bold;
+}
+
+/* Estilo del monto */
 .amount {
     display: flex;
+    justify-content: left;
     align-items: center;
-    margin: 10px 0;
-    justify-content: center;
+    margin: 15px 0;
 }
 
 .currency {
     font-size: 24px;
-    color: #333;
 }
 
 .value {
     font-size: 36px;
-    color: #007bff;
-    margin-left: 10px;
+    font-weight: bold;
+    margin: 0 10px;
 }
 
 .extra {
-    background-color: #ff6b6b;
-    color: white;
+    background-color: #fa0050;
+    color: #ffffff;
     padding: 5px 10px;
+    font-size: 16px;
     border-radius: 5px;
-    margin-left: 10px;
+    font-weight: 600;
+}
+
+/* Texto explicativo */
+p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #100423;
 }
 
 .bold {
     font-weight: bold;
 }
 
-.highlight {
-    color: #ff6b6b;
-    font-weight: bold;
-}
-
+/* Disclaimer para la fecha de validez */
 .disclaimer {
+    color: #ffffff;
     font-size: 12px;
-    color: #555;
-    margin-top: 20px;
+    padding: 5px;
 }
