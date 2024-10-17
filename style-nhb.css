@@ -1,0 +1,54 @@
+body {
+    font-family: Segma;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.currency {
+    font-size: 24px;
+    color: #333;
+}
+
+.value {
+    font-size: 36px;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+.extra {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #555;
+}
