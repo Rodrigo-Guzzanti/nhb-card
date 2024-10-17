@@ -8,13 +8,13 @@ function formatDuration(duration) {
 }
 
 // Función para crear una tarjeta HTML
-function createCard(vehicleType, amunt, threshold, duration, endDate) {
+function createCard(vehicleType, amount, threshold, duration, endDate) {
     return `
         <div class="section">
             <h2>Si repartís en <span class="highlight">${vehicleType}</span></h2>
             <div class="amount">
                 <span class="currency">$</span>
-                <span class="value">${amunt}</span>
+                <span class="value">${amount}</span>
                 <span class="extra">Extras</span>
             </div>
             <p>Para recibir el extra tenés que completar al menos <span class="bold">${threshold} pedidos</span> en tus primeros <span class="bold">${formatDuration(duration)}</span>.</p>
@@ -33,7 +33,7 @@ function updateCards(data, selectedCity) {
 
     // Iteramos sobre los registros filtrados y generamos tarjetas dinámicas
     filteredData.forEach(item => {
-        const cardHTML = createCard(item.vehicle_types, item.amunt, item.threshold, item.duration, item.end_date);
+        const cardHTML = createCard(item.vehicle_types, item.amount, item.threshold, item.duration, item.end_date);
         container.innerHTML += cardHTML; // Añadimos cada tarjeta al contenedor
     });
 }
