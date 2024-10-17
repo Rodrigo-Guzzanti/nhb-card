@@ -1,5 +1,5 @@
 // URL del Google Apps Script desplegado que devuelve el JSON con los datos
-const sheetUrl = 'https://script.google.com/macros/s/YOUR_DEPLOYED_URL/exec';
+const sheetUrl = 'https://script.google.com/macros/s/AKfycbz-V9xb0Umy1HvO9ImYl360le32ACDV_6oxjFg6g_Tun-hEP4-G6G2uLg8Nmj27sN3uxQ/exec';
 
 // Función para formatear el valor de duration (ejemplo: P20D => 20 días)
 function formatDuration(duration) {
