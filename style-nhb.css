@@ -58,19 +58,14 @@ select {
 .section {
     padding: 20px;
     position: relative;
+    background-color: #00d9fc; /* Color de fondo común para todas las secciones */
 }
 
-/* Estilo específico para las secciones de moto y bici */
-.section-moto-auto,
-.section-bici {
-    background-color: #00d9fc;
-    margin-bottom: 5px; /* Separación visual entre las tarjetas */
-}
-
-/* Bordes redondeados */
+/* Simula una separación sin afectar los bordes redondeados */
 .section-moto-auto {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-bottom: 5px; /* Separación visual entre las tarjetas */
 }
 
 .section-bici {
