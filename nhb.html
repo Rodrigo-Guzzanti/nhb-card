@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NHB Card</title>
-    <link rel="stylesheet" href="styles-nhb.css">
+    <link rel="stylesheet" href="style-nhb.css">
+    <script src="script-nhb.js"></script>
 </head>
 <body>
-    <div id="flyer-container"></div> <!-- Aquí se inyectará el contenido dinámico generado por JS -->
-    
-    <!-- Incluir el archivo JavaScript -->
-    <script src="scripts-nhb.js"></script>
+     <div id="app-container">
+        <h1>Mirá el bono de inicio de tu ciudad</h1>
+        <label for="city-select">Seleccioná tu ciudad:</label>
+        <select id="city-select">
+            <option value="">-- Seleccioná una ciudad --</option>
+        </select>
+        <div id="flyer-container"></div>
+    </div>
 </body>
 </html>
